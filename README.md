@@ -1,10 +1,12 @@
-# html5-ad
+# ScrollJS Demo
 
-Automation, through Grunt, for a basic HTML5 ad.
+Simple example leveraging ScollMagic library and html , css.
 
 ## Getting Started
-1. Update `project.json` with name and ad dimensions.
-2. Run `grunt watch`.
+1. Cd into project folder
+2. Run npm install, if no warning are being flagged installion is working.
+3. Run grunt to create base build of boilerplate for the site.
+4. Run `grunt watch`.
 3. ???
 4. Profit!
 
@@ -27,11 +29,5 @@ avoid touching the `<head>` area unless you know what you're doing.
 - `grunt deploy`: Compile, minify, encode images to CSS, output zip to 
 `deploy/` for upload.
 
-## Future Features
-- Support for SASS option
-- Multiple deploy targets, add output for Sizmek, DoubleClick, Google Display Network, 
-Conversant, etc.  Currently only setup for Sizmek.
-- Generator to build framework/boilerplate for common sizes.
-- Autoreload.
-- Add jshint, basic functionality tests.
+
 
