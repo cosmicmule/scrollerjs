@@ -1,0 +1,425 @@
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+#content-wrapper,
+#section-wrapper,
+#section-wrapper .scrollContent {
+  height: 100%;
+}
+a {
+  color: white;
+}
+#topPageBorder {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 40px;
+  background: #291919;
+}
+#intro {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  min-width: 100%;
+  height: 100vh;
+}
+#intro #videoWrapper {
+  position: relative;
+  background: black;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto 0;
+  z-index: -1;
+  overflow: hidden;
+}
+#intro #videoWrapper video {
+  min-width: 100%;
+  min-height: 100%;
+  opacity: .8;
+}
+#intro #videoWrapper .videoFilter {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/gridTecture.png') 0 0;
+  opacity: .3;
+  z-index: .6;
+}
+#intro #introContent {
+  position: absolute;
+  top: 10%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 565;
+}
+#intro #introContent #logo {
+  width: 125px;
+  fill: white;
+}
+#intro #introContent #logoName {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 54px;
+  font-weight: 600;
+}
+#intro #introContent #logoTagline {
+  color: #fff;
+  margin-top: 0x;
+  font-weight: 300;
+}
+#intro #introContent #yrIcon {
+  margin-top: 5%;
+  width: 125px;
+}
+#intro #introContent #yrIcon .outer {
+  fill: #ffffff;
+}
+#intro #introContent #yrIcon .inner {
+  fill: rgba(64, 39, 39, 0.2);
+}
+#intro #introContent #yrIconLine {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 200;
+  margin: 10px 0 ;
+  width: 200px;
+  text-align: center;
+  line-height: 25px;
+}
+#intro #introContent #yrIconLine span {
+  font-weight: 600;
+}
+#intro #introContent #introCopy {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 32px;
+  max-width: 1000px;
+  margin-top: 2%;
+}
+#process {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url(../images/pattern1.jpg);
+}
+#process .process_sect_1 {
+  width: 100%;
+  height: 100vh;
+}
+#process .process_sect_1 #imgAttch {
+  background: url(../images/portfolioBg2.jpg);
+}
+#process .process_sect_2 {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 3000px;
+}
+#process .process_sect_3 {
+  width: 100%;
+  height: 100vh;
+}
+#process .process_sect_4 {
+  width: 100%;
+  height: 100vh;
+}
+#portfolio {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#portfolio #portfolioHolder {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(../images/portfolioBg.jpg);
+  background-size: cover;
+}
+#portfolio #portfolioHolder #portfolioIcon {
+  width: 175px;
+  fill: #fff;
+}
+#portfolio #portfolioHolder p {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+  text-shadow: 0px 0px 105px #399ccf;
+}
+#portfolio a {
+  text-decoration: none;
+}
+#portfolio a:hover {
+  text-decoration: underline;
+}
+#portfolio ul {
+  list-style-type: none;
+  padding: 0;
+}
+#portfolio li {
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+#portfolio #displayPortfolioHolder {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+}
+#portfolio #displayPortfolioHolder #ul_Left {
+  list-style-type: none;
+  margin: 0 30px;
+  padding: 0;
+  width: 50%;
+}
+#portfolio #displayPortfolioHolder #ul_Left li {
+  display: block;
+  font-size: 18px;
+  padding: 15px 0 ;
+  text-align: right;
+  border: 0px;
+}
+#portfolio #displayPortfolioHolder #ul_Left li ul {
+  font-size: 24px;
+}
+#portfolio #displayPortfolioHolder #ul_Left li ul li {
+  display: inline;
+  padding: 2.5px;
+}
+#portfolio #displayPortfolioHolder #ul_Left li ul a {
+  font-size: 14px;
+}
+#portfolio #displayPortfolioHolder #ul_Right {
+  list-style-type: none;
+  margin: 0;
+  padding: 70px 0;
+  width: 50%;
+  text-align: left;
+}
+#portfolio #displayPortfolioHolder #ul_Right a {
+  text-decoration: none;
+  padding: 0 0 ;
+}
+#portfolio #displayPortfolioHolder #ul_Right a:hover {
+  text-decoration: underline;
+}
+#portfolio #displayPortfolioHolder #ul_Right li {
+  display: block;
+  font-size: 18px;
+  padding: 15px 0 ;
+  text-align: left;
+  border: 0px;
+}
+#portfolio #displayPortfolioHolder #ul_Right li ul {
+  font-size: 24px;
+  padding: 0;
+}
+#portfolio #displayPortfolioHolder #ul_Right li ul li {
+  display: inline;
+  padding: 0;
+  text-align: left;
+}
+#portfolio #displayPortfolioHolder #ul_Right li ul a {
+  font-size: 14px;
+  text-align: left;
+}
+#portfolio .portfolio_sect_1 {
+  background: url(../images/pattern1.jpg);
+}
+#portfolio .portfolio_sect_2 {
+  background: #4f4830;
+}
+#portfolio .portfolio_sect_3 {
+  background: #150d0d;
+}
+#portfolio .portfolio_sect_4 {
+  background: #000;
+}
+.panel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.panel .panelInnerTemplate {
+  background: #150d0d;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: inherit;
+  height: inherit;
+  top: 0;
+}
+.panel .panelInnerTemplate h1 {
+  font-size: 66px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -3px;
+}
+.panel .panelInnerTemplate p {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 50%;
+  letter-spacing: 16px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 26px;
+}
+.panel .panelInnerTemplate .letterReset {
+  letter-spacing: 1px !important;
+}
+.demo#section-slides,
+.demo#section-wipes {
+  height: 100%;
+  width: 100%;
+  background-image: none;
+}
+#content-wrapper,
+#example-wrapper {
+  height: 100%;
+}
+.panel > * {
+  font-size: 26px;
+  color: white;
+  position: relative;
+  display: block;
+  height: 0;
+  overflow: visible;
+  top: 50%;
+}
+.box1.outline,
+.box2.outline,
+.box3.outline {
+  border: 1px solid white;
+}
+.turqoise {
+  background-color: #38ced7;
+}
+.brown {
+  background-color: #a66f28;
+}
+.bordeaux {
+  background-color: #953543;
+}
+.skin {
+  background-color: #ED9F4C;
+}
+.black {
+  background-color: #000000;
+}
+.white {
+  background-color: #FFFFFF;
+}
+.red {
+  background-color: #cf3535;
+}
+.green {
+  background-color: #22d659;
+}
+.orange {
+  background-color: #ea6300;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 450px) {
+  #logoName {
+    font-size: 42px !important;
+    text-align: left;
+    margin: 0;
+  }
+  #introCopy {
+    width: 80%;
+    text-align: left !important;
+  }
+  #yrIcon {
+    margin-top: 85px  !important;
+    width: 85px  !important;
+  }
+  h1 {
+    text-align: center !important;
+    font-size: 60px !important;
+    padding: 40px!important;
+  }
+  .letterReset {
+    width: 90% !important;
+    font-size: 18px !important;
+    line-height: 32px !important;
+    text-align: left !important;
+  }
+  #panelInnerTemplate h1 {
+    font-size: 18px !important;
+  }
+  #portfolioIcon {
+    width: 85px !important;
+  }
+  #portfolioHolder p {
+    width: 90%;
+    font-size: 18px !important;
+  }
+  #displayPortfolioHolder {
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #displayPortfolioHolder #ul_Left {
+    width: 80% !important;
+  }
+  #displayPortfolioHolder #ul_Right {
+    width: 80% !important;
+    margin: 0 0 0 30px!important;
+  }
+}
+/*
+    @media only screen and (max-width:450px) {logoName}
+    @media only screen and (max-width: 768px) {}
+    @media only screen and (max-width: 1140px) {}
+*/
+/*
+	Containers
+*/
